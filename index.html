@@ -4,50 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto">
     <title>Document</title>
 </head>
 <style>
-    img {
-        width: 10%;
+    .branding {
+        display: flex;
+        width: 50px;
         height: auto;
     }
 
-    .header {
+    header {
         display: flex;
         outline: solid 1px black;
         background-color: #1F2937;
+        font-family: "Roboto", Times, serif;
+        color: #f9faf8;
+        margin-bottom: 0;
     }
 
-    .heroSecondary {
-        color: #f9faf8;
-        font-size: 18px;
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+    }
+
+
+    li {
+        padding: 10px
     }
 
     .what-is-this-website {
         background-color: #1F2937;
+        font-family: "Roboto", Times, serif;
+        color: #f9faf8;
+        margin-top: 0;
     }
 
     h1 {
+        font-family: "Roboto", Times, serif;
         color: #f9faf8;
         font-size: 48px;
         font-weight: bolder;
     }
 
     button {
+        font-family: "Roboto", Times, serif;
         background-color: #3882F6;
         border: none;
     }
 
 </style>
 <body>
-    <img src="./images/castle.jpg" alt="Castle icon">
-    <div class="header">
-        <ul class="heroSecondary">
-            <li>header link one</li>
-            <li>header link two</li>
-            <li>header link three</li>
-        </ul>
-    </div>
+    <header>
+            <a href="#"><img class="branding" src="./images/branding.png" alt="Castle icon"></a>
+            <nav>
+               <ul class="nav">
+                    <li>header link one</li>
+                    <li>header link two</li>
+                    <li>header link three</li>
+               </ul>
+            </nav>            
+        </header>
 
     <div class="what-is-this-website">
         <h1>This website is awesome</h1>
@@ -57,6 +76,10 @@
 
     <div class="random-information">
         <h2>Some random information</h2>
+        <ul>
+            <img src="./images/castle.jpg" alt="Castle icon">
+            <li>this is some subtext under an illustration or image</li>
+        </ul>
     </div>
 
    
