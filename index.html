@@ -10,29 +10,8 @@
 </head>
 <style>
 
-    .what-is-this-website {
+    body {
         background-color: #1F2937;
-        font-family: "Roboto", Times, serif;
-        color: #f9faf8;
-        margin-top: 0;
-    }
-
-    h1 {
-        font-family: "Roboto", Times, serif;
-        color: #f9faf8;
-        font-size: 48px;
-        font-weight: bolder;
-    }
-
-    button {
-        font-family: "Roboto", Times, serif;
-        background-color: #3882F6;
-        border: none;
-    }
-
-
-    li {
-        padding: 10px
     }
 
     .branding {
@@ -42,7 +21,6 @@
 
     .nav-list {
         display: flex;
-        outline: solid 1px black;
         background-color: #1F2937;
         font-family: "Roboto", Times, serif;
         color: #f9faf8;
@@ -60,6 +38,44 @@
 
     }
 
+    h1 {
+        font-family: "Roboto", Times, serif;
+        color: #f9faf8;
+        font-size: 48px;
+        font-weight: bolder;
+    }
+
+    .website-info {
+        display: flex;
+    }
+
+    .website-info-image-jpg {
+        width: 200px;
+        height: auto;
+    }
+
+    .what-is-this-website {
+        background-color: #1F2937;
+        font-family: "Roboto", Times, serif;
+        color: #f9faf8;
+        justify-content: left;
+        flex-direction: column;
+
+    }
+
+    button {
+        font-family: "Roboto", Times, serif;
+        background-color: #3882F6;
+        border: none;
+    }
+
+
+    li {
+        padding: 10px
+    }
+
+
+
 </style>
 <body>
     <header>
@@ -73,15 +89,15 @@
         </nav>            
     </header>
 
-
-
-
-
-
-    <div class="what-is-this-website">
-        <h1>This website is awesome</h1>
-        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrat</p>
-        <button>Sign up</button>
+    <div class="website-info">
+        <div class="what-is-this-website">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrat</p>
+            <button>Sign up</button>
+        </div>
+        <div class="website-info-image">
+            <a href="#"><img class="website-info-image-jpg" src="./images/money.jpg" alt="Counting dollar bills"></a>
+        </div>
     </div>
 
     <div class="random-information">
