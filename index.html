@@ -9,31 +9,6 @@
     <title>Document</title>
 </head>
 <style>
-    .branding {
-        display: flex;
-        width: 50px;
-        height: auto;
-    }
-
-    header {
-        display: flex;
-        outline: solid 1px black;
-        background-color: #1F2937;
-        font-family: "Roboto", Times, serif;
-        color: #f9faf8;
-        margin-bottom: 0;
-    }
-
-    ul {
-        display: flex;
-        list-style-type: none;
-        justify-content: flex-end;
-    }
-
-
-    li {
-        padding: 10px
-    }
 
     .what-is-this-website {
         background-color: #1F2937;
@@ -55,18 +30,53 @@
         border: none;
     }
 
+
+    li {
+        padding: 10px
+    }
+
+    .branding {
+        width: 50px;
+        height: auto;
+    }
+
+    .nav-list {
+        display: flex;
+        outline: solid 1px black;
+        background-color: #1F2937;
+        font-family: "Roboto", Times, serif;
+        color: #f9faf8;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-item {
+        list-style: none;
+        margin-right: 2em;
+    }
+
+    .nav-item:first-child {
+        margin-right: auto;
+
+    }
+
 </style>
 <body>
     <header>
-            <a href="#"><img class="branding" src="./images/branding.png" alt="Castle icon"></a>
-            <nav>
-               <ul class="nav">
-                    <li>header link one</li>
-                    <li>header link two</li>
-                    <li>header link three</li>
-               </ul>
-            </nav>            
-        </header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#"><img class="branding" src="./images/branding.png" alt="Castle icon"></a></li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Consulting</li>
+                <li class="nav-item">Contact</li>
+            </ul>
+        </nav>            
+    </header>
+
+
+
+
+
 
     <div class="what-is-this-website">
         <h1>This website is awesome</h1>
