@@ -17,6 +17,7 @@
     .branding {
         width: 50px;
         height: auto;
+        margin-left: -30px;
     }
 
     .nav-list {
@@ -26,6 +27,7 @@
         color: #f9faf8;
         justify-content: flex-end;
         align-items: center;
+        margin-bottom: 50px;
     }
 
     .nav-item {
@@ -50,16 +52,17 @@
     }
 
     .website-info-image-jpg {
-        width: 200px;
+        width: 400px;
         height: auto;
+        padding: 20px;
     }
 
     .what-is-this-website {
-        background-color: #1F2937;
         font-family: "Roboto", Times, serif;
         color: #f9faf8;
         justify-content: left;
         flex-direction: column;
+        margin-left: 20px;
 
     }
 
@@ -67,11 +70,49 @@
         font-family: "Roboto", Times, serif;
         background-color: #3882F6;
         border: none;
+        padding: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
     }
 
 
     li {
-        padding: 10px
+        border: solid 2px red;
+    }
+
+    .what-is-this-website-header {
+        margin-bottom: -10px;
+    }
+
+    .random-information {
+        background-color: #f9faf8;
+        margin: 0%;
+        border: solid 2px black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Roboto", Times, serif;
+    }
+
+    .random-information h2 {
+        display: flex;
+        justify-content: center;
+        border: solid 2px orange;
+        font-weight: 800;
+    }
+
+    .random-information-photos{
+        display: flex;
+        border: solid 2px blue;
+    }
+
+    .random-information-photos-jpg {
+        border: solid 2px green;
+        height: 200px;
+        width: auto;
     }
 
 
@@ -91,8 +132,8 @@
 
     <div class="website-info">
         <div class="what-is-this-website">
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrat</p>
+            <h1 class="what-is-this-website-header">Budget from the Heart</h1>
+            <p class="what-is-this-website-paragraph">Budgeting isn't about setting limits for yourself. It's about making conscience decisions about how you choose to spend your money, so you can focus on the things that matter to <em>you.</em></p>
             <button>Sign up</button>
         </div>
         <div class="website-info-image">
@@ -101,9 +142,13 @@
     </div>
 
     <div class="random-information">
-        <h2>Some random information</h2>
-        <ul>
-            <img src="./images/castle.jpg" alt="Castle icon">
+        <h2>Our Mission</h2>
+        <div class="random-information-photos">
+            <img class="random-information-photos-jpg" src="./images/plant.jpg" alt="Castle icon">
+            <img class="random-information-photos-jpg" src="./images/saving.jpg" alt="Castle icon">
+            <img class="random-information-photos-jpg" src="./images/family.jpg" alt="Castle icon">
+        </div>
+        <ul >
             <li>this is some subtext under an illustration or image</li>
         </ul>
     </div>
