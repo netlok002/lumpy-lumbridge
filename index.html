@@ -55,6 +55,7 @@
         width: 400px;
         height: auto;
         padding: 20px;
+        margin-bottom: 100px;
     }
 
     .what-is-this-website {
@@ -63,6 +64,7 @@
         justify-content: left;
         flex-direction: column;
         margin-left: 20px;
+        margin-bottom: 100px;
 
     }
 
@@ -78,43 +80,112 @@
         border-radius: 5px;
     }
 
-
-    li {
-        border: solid 2px red;
-    }
-
     .what-is-this-website-header {
         margin-bottom: -10px;
     }
 
-    .random-information {
+    .our-mission {
         background-color: #f9faf8;
-        margin: 0%;
-        border: solid 2px black;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        margin-left: -30px;
+        margin-right: -30px;
+        padding: 20px;
         font-family: "Roboto", Times, serif;
     }
 
-    .random-information h2 {
+    .our-mission-blocks {
         display: flex;
-        justify-content: center;
-        border: solid 2px orange;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    
+    .our-mission-item {
+        
+    }
+
+    .our-mission h2 {
+        text-align: center;
+        font-size: 36px;
+        font-family: "Roboto", Times, serif;
         font-weight: 800;
+        color:#1F2937;
     }
 
-    .random-information-photos{
+    .our-mission img {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .quote {
+        background-color: #E5E7EB;
+        font-size: 36px;
+        font-weight: lighter;
+        font-style: italic;
+        color: #1F2937;
+        padding: 80px;
+        padding-left: 200px;
+        padding-right: 200px;
+        margin-top: auto;
+        margin-bottom: 50px;
+        margin-left: -30px;
+        margin-right: -30px;
+        
+    }
+
+    .quote-author {
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+        color: #1F2937;
+        text-align: right;
+        font-family: "Roboto", Times, serif;
+    }
+
+    .call-to-action {
+        background-color: #f9faf8;
+        margin: -20px;
+        margin-top: -60px;
+        padding: 80px;
+        align-items: center;        
+    }
+
+    .call-to-action-block {
+        background-color: #3882F6;
         display: flex;
-        border: solid 2px blue;
+        border-radius: 5px;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
-    .random-information-photos-jpg {
-        border: solid 2px green;
-        height: 200px;
-        width: auto;
+    .call-to-action-banner {
+        color:#E5E7EB;
+        text-align: left;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 
+    h4 {
+        font-weight: 700;
+        font-family: "Roboto", Times, serif;
+    }
+
+    .call-to-action-banner p {
+        margin-top: -20px;
+    }
+
+    .cta-button {
+        border: 2px solid #E5E7EB;
+        margin: 20px;
+    }
+    
+    footer {
+        margin-top: 80px;
+        color:#E5E7EB;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
 
 </style>
@@ -141,19 +212,42 @@
         </div>
     </div>
 
-    <div class="random-information">
+    <div class="our-mission">
         <h2>Our Mission</h2>
-        <div class="random-information-photos">
-            <img class="random-information-photos-jpg" src="./images/plant.jpg" alt="Castle icon">
-            <img class="random-information-photos-jpg" src="./images/saving.jpg" alt="Castle icon">
-            <img class="random-information-photos-jpg" src="./images/family.jpg" alt="Castle icon">
-        </div>
-        <ul >
-            <li>this is some subtext under an illustration or image</li>
-        </ul>
+        <span class="our-mission-blocks">
+            <span class="our-mission-item">
+                <img src="./images/plant.jpg" alt="Castle icon">
+                <p>this is some subtext under an illustration or image</p>
+            </span>
+            <span class="our-mission-item">
+                <img src="./images/organize.jpg" alt="Organizing">
+                <p>this is some subtext under an illustration or image</p>
+            </span>  
+            <span class="our-mission-item">
+                <img src="./images/family.jpg" alt="Family">
+                <p>this is some subtext under an illustration or image</p>
+            </span>  
+            <span class="our-mission-item">
+                <img src="./images/picnic.jpg" alt="Picnic">
+                <p>this is some subtext under an illustration or image</p>
+            </span>       
+        </span>
     </div>
-
-   
-    
+    <div class="quote">
+        <p>A budget is telling your money where to go instead of wondering where it went.</p>
+        <p class="quote-author">- C.Maxwell</p>
+    </div>
+    <div class="call-to-action">
+        <div class="call-to-action-block">
+            <div class="call-to-action-banner">
+                <h4>Call to action! It's time!</h4>
+                <p>Sign up for our product by clicking that button right over there!</p>
+             </div>
+             <button class="cta-button">Sign up</button>
+        </div>
+    </div> 
+    <footer>
+        Copyright @ The Oding Project 2021
+    </footer>
 </body>
 </html>
